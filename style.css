@@ -1,0 +1,67 @@
+
+#map {
+        height:80vh;
+        
+        border: solid 1px black;
+      }
+
+#sidebar-wrapper {
+  top: 52px;
+  left: -200px;
+  width: 300px;
+  /**background-color: #5677fc;**/
+  background-color: Black;
+  color: white;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+}
+.sidebar-nav {
+  position: absolute;
+  top: 200;
+  margin: 0;
+  padding-left: 0;
+  width: 300px;
+  list-style: none;
+}
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 50px;
+}
+.sidebar-nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.sidebar-nav li a:hover {
+  background: rgba(255,255,255,0.25);
+  color: white;
+  text-decoration: none;
+}
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+#sidebar-wrapper.sidebar-toggle {
+  transition: all 0.3s ease-out;
+  margin-left: -200px;
+}
+
+#search-box{color:Black;}
+
+#myButton{color:Black;}
+@media (min-width: 768px) {
+  .navbar-toggle{
+    display: block;
+  }
+}
+
+/**@media (min-width: 768px) {**/
+@media (min-width: 1110px) {
+  #sidebar-wrapper.sidebar-toggle {
+    transition: 0s;
+    left: 200px;
+  }
+  .navbar-toggle{
+    display: None;
+  }
+}
